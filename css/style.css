@@ -85,17 +85,25 @@ header{
     transition: 0.5s ease;
 }
 
-header .brand{
+/* header .brand{
     color: var(--color--blanco);
     font-size: var(--h1-font-size);
     font-weight: var(--font-semi-bold);
     text-transform: uppercase;
     text-decoration: none;
+    
 
+} */
+.brand{
+    top:0;
+    display: flex;
+    left: 0;
+    width: 150px;
+    height: auto;
 }
-
 header .navigation{
     position: relative;
+    top: -20px;
 
 }
 
@@ -124,11 +132,12 @@ header .navigation .navigation-items a::before{
 
 header .navigation .navigation-items a:hover::before{
 width: 100%;
+
 }
 
-section{
+/* section{
     padding: 100px  200px;
-}
+} */
 
 
 hr{
@@ -136,6 +145,10 @@ border: 1px solid #666;
 border-radius: 300px/10px; 
 height: 0px;
  text-align: center;
+}
+
+section{
+    display: block;
 }
 .home{
     position: relative;
@@ -145,6 +158,7 @@ height: 0px;
     justify-content: center;
     flex-direction: column;
     background: var(--color--azul);
+    padding: 100px  200px;
 }
 
 .home::before{
@@ -284,17 +298,57 @@ height: 0px;
     transition-property: clip-path;
 }
 
+/* ==============aliados=========== */
+
+.aliados{
+    display: block;
+    margin: auto;
+    background-color:rgb(233, 233, 233);
+    height: 250px;
+}
+.container{
+
+display: flex;
+    padding: 0 7%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+
+.subtitle{
+    display: block;
+   
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+}
+
+.exclusives{
+    width: 200px; 
+}
+.exclusives div img{
+    width: 100%;
+    border-radius: 10px;
+}
 
 /* =============propiedades destacadas=========== */
 
 .products{
     display: flex;
     flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
 }
 .grid{
     display: grid;
 
 }
+
 
 .container-title{
     padding: 2rem 2rem;
@@ -304,66 +358,68 @@ height: 0px;
 }
 
 
-.info__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 
 .info__information{
     display: flex;
-   margin-bottom: var(--mb-2);
-   padding: 10px 20px;
+    
+   margin-bottom: var(--mb-0-75);
+   
 }
 
+
+.info__container{
+    display: flex;
+    flex-direction: row;
+}
 .card{
-    margin: 10px;
+    margin: 30px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 20px rgb(0, 0, 0, 0.2);
     overflow: hidden;
-    width: 500px;
+    width: 350px;
+    height: 580px;
+    
 }
 
 .info__icon{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--color--negro);
     margin-right: var(--mb-0-75);
 }
 
 .info__title{
-    font-size: var(--h4-font-size);
+    font-size: var(--small-font-size);
     font-weight: var(--font-medium);
 }
 
 
 .info__subtitle{
-    font-size: var(--small-font-size);
+    font-size: var(--smaller-font-size);
     color: var(--text-color-light);
 }
 
+
+
 .card-header img{
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
 }
 
 .card-body{
     display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    min-height: 250px;
+    padding: 2px;
+    
 }
 
 
 
 .card-body p{
     font-size: 13px;
-    margin: 0 0 40px;
+    margin: 0 0 20px;
 }
 
 
@@ -381,17 +437,20 @@ height: 0px;
 }
 
 .tag-teal{
-    background-color: #47bcd4;
+    background-color: #3966e2;
 }
 
 .button{
     display: inline-block;
     background-color: var(--first-color);
     color: #fff;
-    padding: 1rem;
+    padding: .2rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
     text-decoration: none;
+    width: 110px;
+    
+    
 }
 
 
@@ -402,8 +461,11 @@ height: 0px;
 
 
 .button--flex{
-    display: inline-flex;
-    align-items: center;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   
+   
 }
 .button__icon{
     font-size: 1.25rem;
@@ -411,12 +473,94 @@ height: 0px;
     transition: .3s;
 }
 
+.footer{
+    margin-top: 20px;
+    display: block;
+    
+    background-color: #063c88;
+    height: auto;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    flex-wrap: wrap;
+
+}
+
+.info-contacto{
+    display: block;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.title-footer{
+    font-size: 1.2rem;
+    color: var(--color--blanco);
+    text-align: center;
+    margin: 20px 10px;
+
+   
+}
+
+.informacion-footer h6 {
+    color: var(--color--blanco);
+    font-size: var(--h4-font-size);
+   
+}
+
+.informacion-footer span {
+    color: rgb(156, 156, 156);
+    display: block;
+    padding: 10 5px;
+
+
+}
+.informacion-footer span a{
+    color: rgb(156, 156, 156);
+    display: block;
+    padding: 10 5px;
+
+
+}
+
+
+
+.eventos{
+    display: block;
+
+    justify-content: center;
+    align-content: center;
+    margin: 10 10px;
+    margin: 10 10px;
+}
+
+
+.redes{
+    display: block;
+  
+   
+}
+
+.desarrollo a{
+    display: block;
+    color: var(--color--blanco);
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: 20 20px;
+    font-size: var(--smaller-font-size);
+}
+
+
 @media (max-width: 1040px) {
     header{
         padding: 12px 20px;
        
     }
-    section{
+   .home{
         padding: 100px 20px; 
     }
     .home .media-icons{
@@ -480,4 +624,60 @@ height: 0px;
         background-position: center;
         transition: 0.3s ease;
     }
+}
+
+
+@media screen and (max-width: 830px){ 
+    .container-products{
+       display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    
+    }
+    .brand{
+
+        width: 60px;
+
+    }
+
+}
+@media screen and (max-width: 580px){ 
+   
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer-content hr{
+        width: 100%;
+        border: 1px solid #fff; 
+    border-radius: 300px/10px; 
+    height: 0px;
+    text-align: center;
+    }
+
+    .title-footer{
+        font-size: 1.4rem;
+        color: var(--color--blanco);
+       
+
+    }
+
+    .info-contacto{
+        text-align: center;
+    
+    }
+    .evento{
+        text-align: center;
+    
+    }
+
+    .redes{
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+  
+    
 }
