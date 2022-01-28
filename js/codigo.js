@@ -27,6 +27,8 @@ btns.forEach((btn, i) =>{
 });
 
 
+
+
 (function ($) {
     "use strict";
 
@@ -305,6 +307,7 @@ btns.forEach((btn, i) =>{
         $('.js-modal1').removeClass('show-modal1');
     });
 
-
-
 })(jQuery);
+
+
+
