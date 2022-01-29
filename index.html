@@ -35,6 +35,7 @@
 
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/util.css">
 
 
 </head>
@@ -245,45 +246,14 @@
 
         <hr>
         <div class="row isotope-grid" style="position: relative; height: auto;" >
-            <div class="col-sm-12 col-md-3 col-lg-3 isotope-item venta" > 
-                        <!-- propiedad 1 -->
-                <div class="block2">
-                    <div class="propiedad__container">
-                        <img src="images/finca1.png" alt="IMG-PRODUCT">
 
-                        <a href="#" class="propiedad__container-btn">
-                            Ver propiedad
-                        </a>
-                    </div>
-
-                    <div class="propiedad__container">
-                        <div class="propiedad__content ">
-                            <a href="#" class="propiedad__title">
-                                Finca la Bonita
-                            </a>
-
-                            <span class="propiedad__price">
-                                $1.800.000
-                            </span>
-                        </div>
-
-                        <div class="propiedad__actions">
-                            <a href="#" class="btn__actions">
-                                <img class="actions__love1" src="images/icons/icon-heart-01.png" alt="ICON">
-                                <img class="actions__love2" src="images/icons/icon-heart-02.png" alt="ICON">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
             <div class="col-sm-12 col-md-4 col-lg-3 isotope-item venta" > 
                         <!-- propiedad 1 -->
                 <div class="block2">
                     <div class="propiedad__container">
                         <img src="images/finca1.png" alt="IMG-PRODUCT">
 
-                        <a href="#" class="propiedad__container-btn">
+                        <a href="#" class="propiedad__container-btn js-show-modal1">
                             Ver propiedad
                         </a>
                     </div>
@@ -724,7 +694,7 @@
         </div>
         <div class="copy">
             <p class="copy__text">
-                Copyright ©<script>document.write(new Date().getFullYear());</script>2022 Derechos reservados <a href="https://www.instagram.com/vikthorarango/" target="_blank">VICTOR ARANGO</a>
+                Copyright ©<script>document.write(new Date().getFullYear());</script> Derechos reservados <a href="https://www.instagram.com/vikthorarango/" target="_blank">VICTOR ARANGO</a>
 
             </p>
         </div>
@@ -738,8 +708,134 @@
     </span>
 </div>
 
+    <!-- ================modal Detalles producto=================== -->
+
+<div class="container__modal js-modal1">
+    <div class="content__modal js-hide-modal1"></div>
+
+    <div class="container">
+        <div class="bg0 p-t-60 p-b-30 p-lr-15-lg how-pos3-parent">
+            <button class="close__modal">
+                <img src="images/icons/icon-close.png" alt="CLOSE">
+            </button>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-7 ">
+                    <div class="p-l-25 p-r-30 p-lr-0-lg">
+                        <div class="wrap-slick3 flex-sb flex-w">
+                            <div class="wrap-slick3-dots"></div>
+                            <div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
+
+                            <div class="slick3 gallery-lb">
+                                <div class="item-slick3" data-thumb="images/finca1.png">
+                                    <div class="wrap-pic-w pos-relative">
+                                        <img src="images/finca1.png" alt="IMG-PRODUCT">
+
+                                        <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-01.jpg">
+                                            <i class="fa fa-expand"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="item-slick3" data-thumb="images/finca1.png">
+                                    <div class="wrap-pic-w pos-relative">
+                                        <img src="images/finca1.png" alt="IMG-PRODUCT">
+
+                                        <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-02.jpg">
+                                            <i class="fa fa-expand"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="item-slick3" data-thumb="images/finca1.png">
+                                    <div class="wrap-pic-w pos-relative">
+                                        <img src="images/finca1.png" alt="IMG-PRODUCT">
+
+                                        <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-03.jpg">
+                                            <i class="fa fa-expand"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-5 p-b-30">
+                    <div class="p-r-50 p-t-5 p-lr-0-lg">
+                        <h4 class="mtext-105 cl2 js-name-detail p-b-14">
+                           Finca la bonita
+                        </h4>
+
+                        <span class="mtext-106 cl2">
+                            $1.800.000
+                        </span>
+
+                        <p class="stext-102 cl3 p-t-23">
+                            Hermosa finca Hubicada en copacabana Antioquia a 40 minutos de Medellin 
+                        </p>
+                        
+                        <!--  -->
+                        <div class="p-t-33">
+                            <div class="info__modal">
+                                <div class="content__info">
+                                       <div class="title__modal">
+                                        <i class="uil uil-users-alt icon__modal"></i>
+                                        Capacidad
+                                       </div>
+                                       <div class="subtitle__modal">
+                                            25 
+                                       </div>
+                                </div>       
+                                <div class="content__info">
+                                       <div class="title__modal">
+                                        <i class="uil uil-bed-double icon__modal"></i>
+                                        Habitaciones
+                                       </div>
+                                       <div class="subtitle__modal">
+                                            7
+                                       </div>
+                                </div>       
+                                <div class="content__info">
+                                       <div class="title__modal">
+                                        <i class="uil uil-map-marker icon__modal"></i>
+                                        ubicacion
+                                       </div>
+                                       <div class="subtitle__modal">
+                                            Copacabana
+                                       </div>
+                                </div>       
+                                <div class="content__info">
+                                       <div class="title__modal">
+                                        <i class="uil uil-basketball icon__modal"></i>
+                                        Zona jueos
+                                       </div>
+                                       <div class="subtitle__modal">
+                                            aplica 
+                                       </div>
+                                </div>       
+                            </div>
+
+                            
+
+                            <div class="button__modal">
+                                
+
+                                    <button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">
+                                        Reservar
+                                    </button>
+                            
+                            </div>	
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!--===============================================================================================-->	
-<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
 	<script src="vendor/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
@@ -837,8 +933,9 @@
 			})
 		});
 	</script>
-<script src="js/codigo.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+    <script src="js/codigo.js"></script>
 
 </body>
 </html>
-
