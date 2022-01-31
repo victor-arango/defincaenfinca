@@ -956,7 +956,7 @@ iframe {border: none;}
 
 /* ============footer============== */
 .footer{
-    display: block;
+    display: flex;
     background-color: #222;
     padding-bottom: 32px;
     padding-top: 45px;
@@ -965,6 +965,7 @@ iframe {border: none;}
 
 
 .footer__title{
+    
     font-family: var(--h3-font) ;
     font-size: 15px;
     line-height: 1.6;
@@ -974,42 +975,41 @@ iframe {border: none;}
     margin: 0;
     font-weight: 500;
 }
-.content__footer{
 
-        padding-bottom: 30px;
-        text-align: center;
-}
+
 
 .footer__info{
+
     padding-bottom: 10px;
     margin: 0;
     list-style-type: none;
 }
 
-.footer__subtitle{
-    font-family: var(--body-font);
-    font-size: 13px;
-    line-height: 1.923;
-    color: #b2b2b2;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-    touch-action: manipulation;
-}
-.footer__subtitle a{
-    text-decoration: none;
-    background-color: transparent;
-}
+    .footer__subtitle{
+    
+        font-family: var(--body-font);
+        font-size: 13px;
+        line-height: 1.923;
+        color: #b2b2b2;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+        touch-action: manipulation;
+    }
+    .footer__subtitle a{
+        text-decoration: none;
+        background-color: transparent;
+    }
 
-.footer__subtitle:hover{
-    color: var(--color--azul);
-    text-decoration: none;
+    .footer__subtitle:hover{
+        color: var(--color--azul);
+        text-decoration: none;
 
-}
-.footer__icon{
-    font-size: 20px;
-}
+    }
+    .footer__icon{
+        font-size: 20px;
+    }
 
 
 .copy__text {
@@ -1022,20 +1022,33 @@ iframe {border: none;}
 
 }
 
-.hr__footer{
 
-    border: 0;
-      border-top-color: currentcolor;
-      border-top-style: none;
-      border-top-width: 0px;
-    border-top: 1px solid rgba(202, 202, 202, 0.1);
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
-    width: 100%;
+@media screen and (max-width: 770px) {
+    
+    .hr__footer{
+
+        border: 0;
+        border-top-color: currentcolor;
+        border-top-style: none;
+        border-top-width: 0px;
+        border-top: 1px solid rgba(202, 202, 202, 0.1);
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible;
+        width: 100%;
+    
+    }
+    
+    .content__footer{
+    
+        justify-content: center;
+        text-align: center;
+    }
+
 
 }
 
+    
 /* =============scrollup=============== */
 .scrollup{
     position: fixed;
