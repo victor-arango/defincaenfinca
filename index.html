@@ -78,7 +78,7 @@
 					</div>	
                     <!-- =====iconos header======= -->
                     <div class="icons__header">
-                        <div class="icon__header_item">
+                        <div class="icon__header_item js-show-modal-search">
                             <i class="uil uil-search"></i>
                         </div>
                         <div class="icon__header_item">
@@ -139,7 +139,22 @@
 				</li>
 			</ul>
 		</div>
+        <!-- ============modal buscar============ -->
+        
+		<div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
+			<div class="container-search-header">
+				<button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
+					<img src="images/icons/icon-close2.png" alt="CLOSE">
+				</button>
 
+				<form class="wrap-search-header flex-w p-l-15">
+					<button class="flex-c-m trans-04">
+						<i class="zmdi zmdi-search"></i>
+					</button>
+					<input class="plh3" type="text" name="search" placeholder="Buscar ...">
+				</form>
+			</div>
+		</div>
 
     </header>
 
@@ -614,9 +629,9 @@
 
 <footer class="footer">
     <div class="container">
-        <div class="row">
+        <div class="row  ">
 
-            <div class="col-sm-6 col-lg-4 content__footer">
+            <div class="col-sm-12 .col-md-4  content__footer">
                 <h4 class="footer__title">
                     CATEGORIAS
                 </h4>
@@ -635,7 +650,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-6 col-lg-4 content__footer">
+            <hr class="hr__footer">
+            <div class="col-sm-12 .col-md-4  content__footer">
                 <h4 class="footer__title">
                     Contacto
                 </h4>
@@ -663,7 +679,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-6 col-lg-4 content__footer">
+            <hr class="hr__footer">
+            <div class="col-sm-12 .col-md-4  content__footer">
                 <h4 class="footer__title">
                     Eventos
                 </h4>
@@ -683,18 +700,16 @@
 
                     <li class="footer__info">
                         <a href="#" class="footer__subtitle">
-                          fiestas
+                            fiestas
                         </a>
                     </li>
                 </ul>
             </div>
-
-          
-			
+            <hr class="hr__footer">
         </div>
         <div class="copy">
             <p class="copy__text">
-                Copyright ©<script>document.write(new Date().getFullYear());</script> Derechos reservados <a href="https://www.instagram.com/vikthorarango/" target="_blank">VICTOR ARANGO</a>
+                Copyright ©<script>document.write(new Date().getFullYear());</script> Derechos reservados <a href="https://www.instagram.com/vikthorarango/" target="_blank">Victor Arango</a>
 
             </p>
         </div>
@@ -709,130 +724,172 @@
 </div>
 
     <!-- ================modal Detalles producto=================== -->
+    <div class="container__modal js-modal1">
+		<div class="content__modal js-hide-modal1"></div>
 
-<div class="container__modal js-modal1">
-    <div class="content__modal js-hide-modal1"></div>
+		<div class="container">
+			<div class="bg0 p-t-60 p-b-30 p-lr-15-lg how-pos3-parent">
+				<button class="how-pos3 hov3 trans-04 js-hide-modal1">
+					<img src="images/icons/icon-close.png" alt="CLOSE">
+				</button>
 
-    <div class="container">
-        <div class="bg0 p-t-60 p-b-30 p-lr-15-lg how-pos3-parent">
-            <button class="close__modal">
-                <img src="images/icons/icon-close.png" alt="CLOSE">
-            </button>
+				<div class="row">
+					<div class="col-md-6 col-lg-7 p-b-30">
+						<div class="p-l-25 p-r-30 p-lr-0-lg">
+							<div class="wrap-slick3 flex-sb flex-w">
+								<div class="wrap-slick3-dots"></div>
+								<div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
 
-            <div class="row">
-                <div class="col-md-6 col-lg-7 ">
-                    <div class="p-l-25 p-r-30 p-lr-0-lg">
-                        <div class="wrap-slick3 flex-sb flex-w">
-                            <div class="wrap-slick3-dots"></div>
-                            <div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
+								<div class="slick3 gallery-lb">
+									<div class="item-slick3" data-thumb="images/finca1.png">
+										<div class="wrap-pic-w pos-relative">
+											<img src="images/finca1.png" alt="IMG-PRODUCT">
 
-                            <div class="slick3 gallery-lb">
-                                <div class="item-slick3" data-thumb="images/finca1.png">
-                                    <div class="wrap-pic-w pos-relative">
-                                        <img src="images/finca1.png" alt="IMG-PRODUCT">
+											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/finca1.png">
+												<i class="fa fa-expand"></i>
+											</a>
+										</div>
+									</div>
 
-                                        <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-01.jpg">
-                                            <i class="fa fa-expand"></i>
-                                        </a>
-                                    </div>
+									<div class="item-slick3" data-thumb="images/finca1.png">
+										<div class="wrap-pic-w pos-relative">
+											<img src="images/finca1.png" alt="IMG-PRODUCT">
+
+											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/finca1.png">
+												<i class="fa fa-expand"></i>
+											</a>
+										</div>
+									</div>
+
+									<div class="item-slick3" data-thumb="images/finca1.png">
+										<div class="wrap-pic-w pos-relative">
+											<img src="images/finca1.png" alt="IMG-PRODUCT">
+
+											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/finca1.png">
+												<i class="fa fa-expand"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-5 p-b-30">
+						<div class="p-r-50 p-t-5 p-lr-0-lg">
+							<h4 class="mtext-105 cl2 js-name-detail p-b-14">
+								Finca la Bonita
+							</h4>
+
+							<span class="mtext-106 cl2">
+								$ 1.800.000
+							</span>
+
+							<p class="stext-102 cl3 p-t-23">
+							Hermosa finca ubbicada en copacabana a 40 minutos de medellin
+							</p>
+							
+							<!--  -->
+                            <div class="p-t-33">
+                                <div class="info__modal">
+                                    <div class="content__info">
+                                           <div class="title__modal">
+                                            <i class="uil uil-users-alt icon__modal"></i>
+                                            Capacidad
+                                           </div>
+                                           <div class="subtitle__modal">
+                                                25 
+                                           </div>
+                                    </div>       
+                                    <div class="content__info">
+                                           <div class="title__modal">
+                                            <i class="uil uil-bed-double icon__modal"></i>
+                                            Habitaciones
+                                           </div>
+                                           <div class="subtitle__modal">
+                                                7
+                                           </div>
+                                    </div>       
+                                    <div class="content__info">
+                                           <div class="title__modal">
+                                            <i class="uil uil-map-marker icon__modal"></i>
+                                            ubicacion
+                                           </div>
+                                           <div class="subtitle__modal">
+                                                Copacabana
+                                           </div>
+                                    </div>       
+                                    <div class="content__info">
+                                           <div class="title__modal">
+                                            <i class="uil uil-basketball icon__modal"></i>
+                                            Zona jueos
+                                           </div>
+                                           <div class="subtitle__modal">
+                                                aplica 
+                                           </div>
+                                    </div>       
                                 </div>
-
-                                <div class="item-slick3" data-thumb="images/finca1.png">
-                                    <div class="wrap-pic-w pos-relative">
-                                        <img src="images/finca1.png" alt="IMG-PRODUCT">
-
-                                        <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-02.jpg">
-                                            <i class="fa fa-expand"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="item-slick3" data-thumb="images/finca1.png">
-                                    <div class="wrap-pic-w pos-relative">
-                                        <img src="images/finca1.png" alt="IMG-PRODUCT">
-
-                                        <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-03.jpg">
-                                            <i class="fa fa-expand"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-5 p-b-30">
-                    <div class="p-r-50 p-t-5 p-lr-0-lg">
-                        <h4 class="mtext-105 cl2 js-name-detail p-b-14">
-                           Finca la bonita
-                        </h4>
-
-                        <span class="mtext-106 cl2">
-                            $1.800.000
-                        </span>
-
-                        <p class="stext-102 cl3 p-t-23">
-                            Hermosa finca Hubicada en copacabana Antioquia a 40 minutos de Medellin 
-                        </p>
                         
-                        <!--  -->
-                        <div class="p-t-33">
-                            <div class="info__modal">
-                                <div class="content__info">
-                                       <div class="title__modal">
-                                        <i class="uil uil-users-alt icon__modal"></i>
-                                        Capacidad
-                                       </div>
-                                       <div class="subtitle__modal">
-                                            25 
-                                       </div>
-                                </div>       
-                                <div class="content__info">
-                                       <div class="title__modal">
-                                        <i class="uil uil-bed-double icon__modal"></i>
-                                        Habitaciones
-                                       </div>
-                                       <div class="subtitle__modal">
-                                            7
-                                       </div>
-                                </div>       
-                                <div class="content__info">
-                                       <div class="title__modal">
-                                        <i class="uil uil-map-marker icon__modal"></i>
-                                        ubicacion
-                                       </div>
-                                       <div class="subtitle__modal">
-                                            Copacabana
-                                       </div>
-                                </div>       
-                                <div class="content__info">
-                                       <div class="title__modal">
-                                        <i class="uil uil-basketball icon__modal"></i>
-                                        Zona jueos
-                                       </div>
-                                       <div class="subtitle__modal">
-                                            aplica 
-                                       </div>
-                                </div>       
+                                
+                        
+                                <div class="button__modal">
+                                    
+                        
+                                        <button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">
+                                            Reservar
+                                        </button>
+                                
+                                </div>	
                             </div>
 
-                            
+							<!--  -->
+							<div class="flex-w flex-m p-l-100 p-t-40 respon7">
+								<div class="flex-m bor9 p-r-10 m-r-11">
+									<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 js-addwish-detail tooltip100" data-tooltip="Add to Wishlist">
+										<i class="zmdi zmdi-favorite"></i>
+									</a>
+								</div>
 
-                            <div class="button__modal">
-                                
+								<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Facebook">
+									<i class="fa fa-facebook"></i>
+								</a>
 
-                                    <button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">
-                                        Reservar
-                                    </button>
-                            
-                            </div>	
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+								<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Twitter">
+									<i class="fa fa-twitter"></i>
+								</a>
+
+								<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Google Plus">
+									<i class="fa fa-google-plus"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -863,19 +920,19 @@
         $('.parallax100').parallax100();
 	</script>
 <!--===============================================================================================-->
-	<script src="vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
-	<script>
-		$('.gallery-lb').each(function() { // the containers for all your galleries
-			$(this).magnificPopup({
-		        delegate: 'a', // the selector for gallery item
-		        type: 'image',
-		        gallery: {
-		        	enabled:true
-		        },
-		        mainClass: 'mfp-fade'
-		    });
-		});
-	</script>
+<script src="vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+<script>
+    $('.gallery-lb').each(function() { // the containers for all your galleries
+        $(this).magnificPopup({
+            delegate: 'a', // the selector for gallery item
+            type: 'image',
+            gallery: {
+                enabled:true
+            },
+            mainClass: 'mfp-fade'
+        });
+    });
+</script>
 <!--===============================================================================================-->
 	<script src="vendor/isotope/isotope.pkgd.min.js"></script>
 <!--===============================================================================================-->

@@ -159,7 +159,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   position: fixed;
   width: 40px;
   height: 38px;
-  bottom: 0px;
+  bottom: 20px;
   right: 40px;
   background-color: #717fe0;
   opacity: 0.5;
@@ -186,7 +186,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 @media (max-width: 575px) {
   .btn-back-to-top {
-    bottom: 0px;
+    bottom: 20px;
     right: 15px;
   }
 }
